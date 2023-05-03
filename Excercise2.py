@@ -1,10 +1,26 @@
 class Cylinder:
+    # cylinder's volume is π r² h, and its surface area is 2π r h + 2π r²
+    
+    pi = 3.14
     def __init__(self,radius=1,height=1):
-        self.radius=radius
-        self.height=height
+        self.radius = radius
+        self.height = height
 
     def volume(self):
-        pass
+        h = self.height
+        r = self.radius
+        pi = self.pi
+        return h*pi*r**2
 
     def surface_area(self):
-        pass
+        h = self.height
+        r = self.radius
+        pi = self.pi
+        return ((2*pi)*(r*h))+((2*pi)+(r**2))
+    
+
+beto = Cylinder(2,3)
+b = beto.surface_area()
+c = beto.volume()
+print (c)
+print (b)

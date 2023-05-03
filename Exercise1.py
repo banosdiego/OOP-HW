@@ -5,8 +5,8 @@ class Line:
         self.coordinate2 = coordinate2
 
     def distance(self):
-        x1,y1 = coordinate1
-        x2,y2 = coordinate2
+        x1,y1 = self.coordinate1
+        x2,y2 = self.coordinate2
         return ((((x2 - x1)**2) + ((y2 - y1)**2))**(1/2))
 
     def slope(self):
@@ -21,3 +21,4 @@ l = Line(coordinate1,coordinate2)
 a = l.distance()
 b = l.slope()
 print(b)
+print (a)
