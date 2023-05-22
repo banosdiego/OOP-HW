@@ -27,3 +27,4 @@ d= pepe.balance
 e = pepe.withdraw(497)
 print (b,c,a,d)
 print(e)
+print (pepe)
